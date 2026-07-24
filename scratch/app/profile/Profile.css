@@ -1,0 +1,43 @@
+/* GitHub Profile & Repository System Design Token Styling */
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.15);
+}
+
+.shadow-premium {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(88, 166, 255, 0.1);
+}
+
+.glass-panel {
+  background: rgba(22, 27, 34, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* GitHub Tab Active Orange Underline Indicator */
+.github-tab-active {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  position: relative;
+}
+
+.github-tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #f78166;
+  border-radius: 2px;
+  animation: slideIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

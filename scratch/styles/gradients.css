@@ -1,0 +1,22 @@
+.bg-radial-hero {
+  background: radial-gradient(80% 50% at 50% -10%, var(--glow-purple) 0%, var(--glow-blue) 50%, transparent 100%);
+}
+
+.bg-radial-section {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(88, 166, 255, 0.05) 0%, transparent 70%);
+}
+
+.card-hover-gradient {
+  background: radial-gradient(
+    300px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+    rgba(255, 255, 255, 0.06),
+    transparent 80%
+  );
+}
+
+.glow-btn-gradient {
+  background: linear-gradient(180deg, #2ea44f 0%, #238636 100%);
+}
+.glow-btn-gradient:hover {
+  background: linear-gradient(180deg, #34b356 0%, #299b3f 100%);
+}

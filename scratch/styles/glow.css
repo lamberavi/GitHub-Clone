@@ -1,0 +1,32 @@
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+}
+
+.glow-orb-purple {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.22) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.glow-orb-blue {
+  background: radial-gradient(circle, rgba(88, 166, 255, 0.2) 0%, transparent 70%);
+  filter: blur(75px);
+}
+
+.glow-orb-pink {
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.18) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.glow-orb-orange {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.16) 0%, transparent 70%);
+  filter: blur(90px);
+}
+
+.glow-orb-green {
+  background: radial-gradient(circle, rgba(35, 134, 54, 0.2) 0%, transparent 70%);
+  filter: blur(70px);
+}
