@@ -1,0 +1,16 @@
+- [x] Create database models in `backend/models/`:
+  - `Repository.js`
+  - `Contribution.js`
+  - `Activity.js`
+- [x] Create backend profile routes in `backend/routes/profileRoutes.js` and mount in `backend/server.js`
+- [x] Create profile modules in `src/pages/Profile/`:
+  - `Profile.css`
+  - `ProfileSidebar.jsx`
+  - `ProfileHeader.jsx`
+  - `ContributionGraph.jsx`
+  - `RepositorySection.jsx`
+  - `ActivitySection.jsx`
+  - `StatsSection.jsx`
+  - `Profile.jsx`
+- [x] Integrate router and views in `src/routes/AppRoutes.jsx`
+- [x] Verify build check succeeds (`npm run build` at root)

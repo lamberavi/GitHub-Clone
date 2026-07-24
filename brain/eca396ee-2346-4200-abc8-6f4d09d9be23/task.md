@@ -1,0 +1,27 @@
+# Tasks
+
+- [x] Phase 1: Initialize Workspace & Base Shell
+  - [x] Determine environment limits (Node not available, switching to Vanilla ESM)
+  - [x] Create `C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone` workspace directories
+  - [x] Create base `index.html` referencing modular script `app.js` and `styles.css`
+- [x] Phase 2: Design System & Mock Data
+  - [x] Write `styles.css` containing premium color tokens, fonts, responsive grids, and components
+  - [x] Write `data/mockData.js` providing full mock database
+  - [x] Write state engine in `app.js` with LocalStorage caching and reactive updates
+- [x] Phase 3: Shell Components
+  - [x] Create `components/Navigation.js` (header, search bar, dropdowns)
+  - [x] Create `components/Sidebar.js` (profile display, repo listing, create repo launcher)
+  - [x] Create `components/ContributionGraph.js` (activity calendar with tooltips)
+  - [x] Create `components/RepoList.js` (dashboard feed with pagination and filters)
+- [x] Phase 4: Repository Tabs
+  - [x] Create `components/RepoHeader.js` (tab navigator: Code, Issues, PRs, Settings)
+  - [x] Create `components/FileExplorer.js` (interactive directory trees and syntax highlighted code view)
+  - [x] Create `components/CommitList.js` (rendered history timeline)
+- [x] Phase 5: Collaborations & Actions
+  - [x] Create `components/IssueTracker.js` (CRUD discussions, status switches, new tickets)
+  - [x] Create `components/PullRequestTracker.js` (open/closed tabs, code diff preview, merge resolver)
+  - [x] Create `components/RepoSettings.js` (edit repo configs, delete repo integration)
+- [x] Phase 6: Deployment & Integration Testing
+  - [x] Integrate all UI modules in `app.js`
+  - [x] Verify HTML validity and JS paths
+  - [x] Provide user instructions for local launching

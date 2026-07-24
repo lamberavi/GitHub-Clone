@@ -1,0 +1,61 @@
+MongoDB Connection Error: connect ECONNREFUSED 127.0.0.1:27017
+MongoDB server offline. Server starting with simulated local/in-memory DB fallback.
+Server listening on port 5000 in development mode.
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 2ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 1ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 1ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 1ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 1ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 1ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 1ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms
+[Profile API] Incoming profile fetch for username: ravil_developer (DB connected: false)
+[Profile API] User profile retrieved in 0ms

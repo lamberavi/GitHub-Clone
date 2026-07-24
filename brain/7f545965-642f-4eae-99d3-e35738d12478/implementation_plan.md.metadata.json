@@ -1,0 +1,6 @@
+{
+  "summary": "Implementation plan for creating the sidebar drawer and making all sidebar options functional. Includes state management, layout updates, global issues/PR view support, and styles for the sliding drawer.",
+  "updatedAt": "2026-07-16T07:02:12.543288600Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

@@ -1,0 +1,7 @@
+- [x] Install Git portable (Downloaded and extracted to external_bin\git)
+- [x] Install MongoDB Community Server portable (Extracted to external_bin\mongodb)
+- [x] Copy backend .env.example to .env
+- [x] Run npm install in backend
+- [x] Run npm install in frontend
+- [x] Verify Git and MongoDB are active and accessible
+- [x] Start backend and frontend development servers

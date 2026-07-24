@@ -1,0 +1,51 @@
+
+> github-clone-react@0.0.0 dev
+> vite
+
+11:37:03 am [vite] (client) Re-optimizing dependencies because vite config has changed
+Port 5173 is in use, trying another one...
+
+  VITE v8.1.5  ready in 586 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+11:37:11 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:37:46 am [vite] (client) page reload temp-zip-build/index.html
+11:37:57 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:38:00 am [vite] (client) page reload temp-zip-build/index.html
+11:43:01 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:43:29 am [vite] (client) page reload temp-zip-build/index.html
+11:43:42 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:43:45 am [vite] (client) page reload temp-zip-build/index.html
+11:49:54 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:50:31 am [vite] (client) page reload temp-zip-build/index.html
+11:50:45 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:50:48 am [vite] (client) page reload temp-zip-build/index.html
+11:53:11 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:53:39 am [vite] (client) page reload temp-zip-build/index.html
+11:53:49 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:53:51 am [vite] (client) page reload temp-zip-build/index.html
+11:58:52 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:59:20 am [vite] (client) page reload temp-zip-build/index.html
+11:59:29 am [vite] (client) page reload temp-zip-build/dist/index.html
+11:59:31 am [vite] (client) page reload temp-zip-build/index.html
+12:06:24 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:07:08 pm [vite] (client) page reload temp-zip-build/index.html
+12:07:24 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:07:27 pm [vite] (client) page reload temp-zip-build/index.html
+12:23:22 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:23:44 pm [vite] (client) page reload temp-zip-build/index.html
+12:23:51 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:23:52 pm [vite] (client) page reload temp-zip-build/index.html
+12:32:29 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:32:57 pm [vite] (client) page reload temp-zip-build/index.html
+12:33:07 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:33:09 pm [vite] (client) page reload temp-zip-build/index.html
+12:38:56 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:39:18 pm [vite] (client) page reload temp-zip-build/index.html
+12:39:24 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:39:26 pm [vite] (client) page reload temp-zip-build/index.html
+12:45:06 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:45:27 pm [vite] (client) page reload temp-zip-build/index.html
+12:45:35 pm [vite] (client) page reload temp-zip-build/dist/index.html
+12:45:37 pm [vite] (client) page reload temp-zip-build/index.html

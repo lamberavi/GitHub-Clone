@@ -1,0 +1,4 @@
+- [x] Update `app.js` routing logic and state values (add `activeView`, `navigateToProfile` action)
+- [x] Bind navbar profile click listener inside `Navigation.js`
+- [x] Create `components/Profile.js` to render the user profile card grid, calendar, and timeline
+- [x] Run build and verify the profile section is accessible and functional

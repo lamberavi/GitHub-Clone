@@ -1,0 +1,533 @@
+
+> github-clone-react@0.0.0 dev
+> vite
+
+
+  VITE v8.1.5  ready in 171 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+11:55:27 am [vite] (client) hmr update /src/index.css, /src/pages/Landing.jsx
+11:55:27 am [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[PARSE_ERROR] Unexpected token
+     ╭─[ src/components/landing/Hero.jsx:112:36 ]
+     │
+ 112 │               <p>clone.configure({</p>
+     │                                    ┬  
+     │                                    ╰── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/components/landing/Hero.jsx
+11:55:27 am [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Unexpected token
+     ╭─[ src/components/landing/Hero.jsx:112:36 ]
+     │
+ 112 │               <p>clone.configure({</p>
+     │                                    ┬  
+     │                                    ╰── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/components/landing/Hero.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+11:55:27 am [vite] (client) [console.error] [vite] Failed to reload /src/pages/Landing.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+11:55:28 am [vite] (client) dependencies optimized: gsap, lenis, react-intersection-observer
+11:55:28 am [vite] (client) optimized dependencies changed. reloading
+11:55:29 am [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[PARSE_ERROR] Unexpected token
+     ╭─[ src/components/landing/Hero.jsx:112:36 ]
+     │
+ 112 │               <p>clone.configure({</p>
+     │                                    ┬  
+     │                                    ╰── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/components/landing/Hero.jsx
+11:55:29 am [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] Unexpected token
+     ╭─[ src/components/landing/Hero.jsx:112:36 ]
+     │
+ 112 │               <p>clone.configure({</p>
+     │                                    ┬  
+     │                                    ╰── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/components/landing/Hero.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+11:55:41 am [vite] (client) hmr update /src/index.css
+11:56:16 am [vite] (client) [Unhandled error] ReferenceError: children is not defined
+ > FeatureSection src/components/landing/FeatureSection.jsx:27:117
+    25 |          <div className="font-mono text-2xs space-y-3 bg-neutral-950 text-slate-200 p-6 rounded-xl border border-githu...
+    26 |            <p className="text-github-light-textMuted dark:text-github-dark-textMuted">// src/components/Button.jsx</p>
+    27 |  ...rk:text-github-dark-purple">export const</span> Button = ({ children }) =&gt; (</p>
+       |                                                                 ^
+    28 |            <p className="pl-4">&lt;<span className="text-github-light-accent dark:text-github-dark-accent">button</spa...
+    29 |            <p className="pl-8">{`{children}`}</p>
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+ > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+
+11:56:16 am [vite] (client) [console.warn] An error occurred in the <FeatureSection> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:56:33 am [vite] (client) [Unhandled error] ReferenceError: children is not defined
+ > FeatureSection src/components/landing/FeatureSection.jsx:27:117
+    25 |          <div className="font-mono text-2xs space-y-3 bg-neutral-950 text-slate-200 p-6 rounded-xl border border-githu...
+    26 |            <p className="text-github-light-textMuted dark:text-github-dark-textMuted">// src/components/Button.jsx</p>
+    27 |  ...rk:text-github-dark-purple">export const</span> Button = ({ children }) =&gt; (</p>
+       |                                                                 ^
+    28 |            <p className="pl-4">&lt;<span className="text-github-light-accent dark:text-github-dark-accent">button</spa...
+    29 |            <p className="pl-8">{`{children}`}</p>
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+ > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+
+11:56:33 am [vite] (client) [console.warn] An error occurred in the <FeatureSection> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:57:26 am [vite] (client) hmr update /src/index.css, /src/components/landing/FeatureSection.jsx
+11:57:27 am [vite] (client) [Unhandled error] ReferenceError: toggle is not defined
+ > FeatureSection src/components/landing/FeatureSection.jsx:83:57
+    81 |            <p className="bg-red-950/80 text-red-300 px-1 font-semibold">- &lt;div className="w-64 bg-slate-900"&gt;</p>
+    82 |            <p className="bg-emerald-950/70 text-emerald-300 px-1 font-semibold">{"+ <div className={`w-64 bg-slate-900...
+    83 |            <p className="opacity-80">  &lt;Navbar toggle={toggle} /&gt;</p>
+       |                                                           ^
+    84 |          </div>
+    85 |        )
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+ > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+
+11:57:27 am [vite] (client) [console.warn] An error occurred in the <FeatureSection> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:57:32 am [vite] (client) hmr update /src/index.css, /src/components/landing/FeatureSection.jsx
+11:57:33 am [vite] (client) [Unhandled error] ReferenceError: Link is not defined
+ > FeatureSection src/components/landing/FeatureSection.jsx:195:15
+    193 |  
+    194 |              <div className="pt-2">
+    195 |                <Link to="/login">
+        |                 ^
+    196 |                  <Button icon={ArrowRight}>
+    197 |                    {current.btnText}
+ > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+ > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+ > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+ > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+ > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+ > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+
+11:57:33 am [vite] (client) [console.warn] An error occurred in the <FeatureSection> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+11:57:39 am [vite] (client) hmr update /src/index.css, /src/components/landing/FeatureSection.jsx
+11:57:40 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:57:40 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:18 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:18 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:18 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:18 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:19 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:19 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:20 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:20 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:49 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:49 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:51 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:51 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:52 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:52 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:53 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:53 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:59 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:59 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:59 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:58:59 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:00 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:00 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:01 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:01 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:01 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:01 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:02 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+11:59:02 am [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+12:09:42 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+12:09:42 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+12:14:08 pm [vite] .env changed, restarting server...
+12:14:08 pm [vite] (client) Re-optimizing dependencies because lockfile has changed
+12:14:08 pm [vite] server restarted.
+12:14:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+12:14:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+12:15:50 pm [vite] (client) hmr update /src/index.css, /src/pages/Login.jsx
+12:15:50 pm [vite] (client) Pre-transform error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+12:15:51 pm [vite] (client) dependencies optimized: @hookform/resolvers/zod, firebase/app, firebase/auth, react-hook-form, zod
+12:15:51 pm [vite] (client) optimized dependencies changed. reloading
+12:15:51 pm [vite] (client) [console.error] [vite] Failed to reload /src/pages/Login.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+12:15:51 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:15:52 pm [vite] (client) Pre-transform error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+12:15:52 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:02 pm [vite] (client) hmr update /src/index.css, /src/pages/Register.jsx
+12:16:02 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:10 pm [vite] (client) hmr update /src/index.css, /src/pages/ForgotPassword.jsx
+12:16:11 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:20 pm [vite] (client) hmr update /src/context/AuthContext.jsx
+12:16:20 pm [vite] (client) Pre-transform error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+12:16:20 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:28 pm [vite] (client) hmr update /src/index.css, /src/routes/AppRoutes.jsx
+12:16:28 pm [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+    ╭─[ src/routes/ProtectedRoute.jsx:6:8 ]
+    │
+  6 │ export default function ProtectedRoute({ children }) {
+    │        ───┬───  
+    │           ╰───── 
+    │ 
+ 30 │ export default ProtectedRoute;
+    │        ───┬───  
+    │           ╰───── 
+────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/routes/ProtectedRoute.jsx
+12:16:28 pm [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+     ╭─[ src/pages/VerifyEmail.jsx:8:8 ]
+     │
+   8 │ export default function VerifyEmail() {
+     │        ───┬───  
+     │           ╰───── 
+     │ 
+ 106 │ export default VerifyEmail;
+     │        ───┬───  
+     │           ╰───── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/VerifyEmail.jsx
+12:16:28 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+    ╭─[ src/routes/ProtectedRoute.jsx:6:8 ]
+    │
+  6 │ export default function ProtectedRoute({ children }) {
+    │        ───┬───  
+    │           ╰───── 
+    │ 
+ 30 │ export default ProtectedRoute;
+    │        ───┬───  
+    │           ╰───── 
+────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/routes/ProtectedRoute.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:28 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+     ╭─[ src/pages/VerifyEmail.jsx:8:8 ]
+     │
+   8 │ export default function VerifyEmail() {
+     │        ───┬───  
+     │           ╰───── 
+     │ 
+ 106 │ export default VerifyEmail;
+     │        ───┬───  
+     │           ╰───── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/VerifyEmail.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:37 pm [vite] (client) hmr update /src/App.jsx, /src/index.css
+12:16:37 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:37 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+    ╭─[ src/routes/ProtectedRoute.jsx:6:8 ]
+    │
+  6 │ export default function ProtectedRoute({ children }) {
+    │        ───┬───  
+    │           ╰───── 
+    │ 
+ 30 │ export default ProtectedRoute;
+    │        ───┬───  
+    │           ╰───── 
+────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/routes/ProtectedRoute.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:16:37 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+     ╭─[ src/pages/VerifyEmail.jsx:8:8 ]
+     │
+   8 │ export default function VerifyEmail() {
+     │        ───┬───  
+     │           ╰───── 
+     │ 
+ 106 │ export default VerifyEmail;
+     │        ───┬───  
+     │           ╰───── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/VerifyEmail.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:17:31 pm [vite] (client) hmr update /src/index.css
+12:17:32 pm [vite] (client) Pre-transform error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+     ╭─[ src/pages/VerifyEmail.jsx:8:8 ]
+     │
+   8 │ export default function VerifyEmail() {
+     │        ───┬───  
+     │           ╰───── 
+     │ 
+ 106 │ export default VerifyEmail;
+     │        ───┬───  
+     │           ╰───── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/VerifyEmail.jsx
+12:17:32 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:17:32 pm [vite] Internal server error: Transform failed with 1 error:
+
+[PARSE_ERROR] A module cannot have multiple default exports.
+     ╭─[ src/pages/VerifyEmail.jsx:8:8 ]
+     │
+   8 │ export default function VerifyEmail() {
+     │        ───┬───  
+     │           ╰───── 
+     │ 
+ 106 │ export default VerifyEmail;
+     │        ───┬───  
+     │           ╰───── 
+─────╯
+
+  Plugin: vite:oxc
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/VerifyEmail.jsx
+      at transformWithOxc (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4033:19)
+      at TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:4104:26)
+      at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:51)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:17:35 pm [vite] (client) hmr update /src/index.css
+12:17:35 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+12:20:10 pm [vite] Internal server error: Failed to resolve import "axios" from "src/api/axios.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/api/axios.js:1:18
+  1  |  import axios from "axios";
+     |                     ^
+  2  |  const api = axios.create({
+  3  |  	baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 0)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)

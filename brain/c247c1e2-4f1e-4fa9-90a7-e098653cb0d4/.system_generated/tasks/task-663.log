@@ -1,0 +1,1511 @@
+
+> github-clone-react@0.0.0 dev
+> vite
+
+
+  VITE v8.1.5  ready in 330 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+1:26:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:26:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:29:36 pm [vite] (client) hmr update /src/index.css
+Error in error handler:
+Error: offset is longer than source length! offset 1450 > length 1219
+    at numberToPos (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:2325:36)
+    at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30426:20)
+    at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+    at EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30203:9)
+    at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+    at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+
+1:29:36 pm [vite] Internal server error: [postcss] Unexpected token, expected "," (56:7)
+  Plugin: vite:css
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/index.css:undefined:NaN
+      at unexpected (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\util.js:99:15)
+      at expect (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\util.js:86:5)
+      at parseObj (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:759:20)
+      at parseExprAtom (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:553:7)
+      at parseExprSubscripts (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:276:20)
+      at parseMaybeUnary (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:257:20)
+      at parseExprOps (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:185:20)
+      at parseMaybeConditional (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:157:20)
+      at baseParseMaybeAssign (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\traverser\expression.js:142:20)
+      at tsParseMaybeAssignWithoutJSX (C:\Users\ravil\.gemini\antigravity-ide\scratch\github-clone-react\node_modules\sucrase\dist\parser\plugins\typescript.js:1580:45)
+1:29:36 pm [vite] (client) [console.error] [vite] Failed to reload /src/index.css. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:29:44 pm [vite] (client) hmr update /src/index.css
+1:30:14 pm [vite] (client) hmr update /src/index.css, /src/components/landing/LogoSection.jsx
+1:30:14 pm [vite] (client) [console.error] [vite] Failed to reload /src/components/landing/LogoSection.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:30:28 pm [vite] (client) hmr update /src/index.css, /src/components/landing/Hero.jsx
+1:30:28 pm [vite] (client) hmr invalidate /src/components/landing/Hero.jsx Could not Fast Refresh (new export)
+1:30:28 pm [vite] (client) hmr update /src/pages/Landing.jsx
+1:30:28 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/LogoSection" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:13:24
+  9  |  import Navbar from "../components/landing/Navbar";
+  10 |  import Hero from "../components/landing/Hero";
+  11 |  import LogoSection from "../components/landing/LogoSection";
+     |                           ^
+  12 |  import FeatureTabs from "../components/landing/FeatureTabs";
+  13 |  import FeatureSection from "../components/landing/FeatureSection";
+1:30:28 pm [vite] Internal server error: Failed to resolve import "../components/landing/LogoSection" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:13:24
+  9  |  import Navbar from "../components/landing/Navbar";
+  10 |  import Hero from "../components/landing/Hero";
+  11 |  import LogoSection from "../components/landing/LogoSection";
+     |                           ^
+  12 |  import FeatureTabs from "../components/landing/FeatureTabs";
+  13 |  import FeatureSection from "../components/landing/FeatureSection";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 8)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+1:30:28 pm [vite] (client) [console.error] [vite] Failed to reload /src/pages/Landing.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:30:36 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css
+1:30:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:30:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:17 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:17 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:18 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:18 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:19 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:19 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:20 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:20 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:34 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:34 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:31:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:32:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:32:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:36:03 pm [vite] (client) hmr update /src/index.css
+1:36:31 pm [vite] (client) hmr update /src/index.css, /src/components/landing/Footer.jsx
+1:36:34 pm [vite] (client) hmr update /src/index.css, /src/components/landing/CTA.jsx
+1:36:37 pm [vite] (client) hmr update /src/index.css, /src/components/landing/CustomerStories.jsx
+1:36:45 pm [vite] (client) hmr update /src/pages/Landing.jsx, /src/index.css
+1:36:45 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:36:45 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:37:38 pm [vite] (client) hmr update /src/index.css, /src/components/landing/AnimatedBackground.jsx
+1:37:38 pm [vite] (client) hmr update /src/index.css, /src/components/landing/ParticleField.jsx
+1:37:38 pm [vite] (client) [console.error] [vite] Failed to reload /src/components/landing/AnimatedBackground.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:37:38 pm [vite] (client) [console.error] [vite] Failed to reload /src/components/landing/ParticleField.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:38:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:40 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:40 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:40 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:38:40 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:43:55 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:43:55 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:12 pm [vite] (client) hmr update /src/index.css, /src/components/landing/CaseStudies.jsx
+1:44:21 pm [vite] (client) hmr update /src/pages/Landing.jsx, /src/index.css
+1:44:21 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:21 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:31 pm [vite] (client) hmr update /src/index.css, /src/components/landing/Footer.jsx
+1:44:31 pm [vite] (client) [console.error] [vite] Failed to reload /src/components/landing/Footer.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:44:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:53 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:44:53 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:12 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:12 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:26 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:26 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:28 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:28 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:29 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:29 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:34 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:34 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:35 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:45:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:46:07 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:46:07 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:11 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:12 pm [vite] (client) hmr update /src/pages/Landing.jsx, /src/index.css
+1:49:12 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:12 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:13 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:13 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+1:49:18 pm [vite] (client) hmr update /src/index.css, /src/components/landing/CustomerStories.jsx
+1:50:54 pm [vite] (client) hmr update /src/pages/Landing.jsx, /src/index.css
+1:50:54 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+1:50:54 pm [vite] (client) [console.error] [vite] Failed to reload /src/pages/Landing.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+1:50:54 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:50:54 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/CustomerStories.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/FeaturedStoryCard.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/CustomerStoryCard.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryLogo.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryBackground.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryDivider.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StorySpotlight.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryCTA.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryGlow.jsx
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryData.js
+1:50:54 pm [vite] (client) page reload src/components/CustomerStories/StoryBadge.jsx
+1:50:54 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:50:54 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:50:54 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:50:54 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:50:54 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+1:51:30 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+1:51:30 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:51:30 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:52:27 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+1:52:27 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+1:52:27 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:02 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:06 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:07 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:07 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:07 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:07 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:00:10 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:10 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:10 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:10 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:10 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:00:12 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:12 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:00:17 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:17 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:17 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:17 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:17 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:00:21 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:21 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:00:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:25 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:26 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:26 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:26 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:27 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:00:31 pm [vite] (client) hmr update /src/index.css, /src/components/AnimatedBackground/BackgroundAnimation.jsx
+2:00:31 pm [vite] (client) hmr update /src/index.css, /src/components/AnimatedBackground/GlobalGradient.jsx
+2:00:31 pm [vite] (client) hmr update /src/index.css, /src/components/AnimatedBackground/GlowLayer.jsx
+2:00:31 pm [vite] (client) hmr update /src/index.css, /src/components/AnimatedBackground/ParticleLayer.jsx
+2:00:31 pm [vite] (client) hmr update /src/index.css, /src/components/AnimatedBackground/NoiseLayer.jsx
+2:00:31 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:31 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:31 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:32 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:32 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:00:38 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:38 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:38 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:38 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:38 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:00:38 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:38 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:43 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:43 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:43 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:43 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:43 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:00:43 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:43 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:43 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:52 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:52 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:52 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:52 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:52 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:00:52 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:52 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:58 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:00:58 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:00:58 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:58 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:58 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:00:58 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:00:58 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:03 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:01:03 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:03 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:03 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:03 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:01:03 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:03 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:05 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:01:05 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:01:05 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:05 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:05 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:01:05 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:05 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:08 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:08 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:08 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:11 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx
+2:01:11 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:01:11 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:11 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:11 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:01:11 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:11 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:17 pm [vite] (client) hmr update /src/components/Cards/IndustryCard.jsx, /src/index.css
+2:01:17 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:17 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:17 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:18 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:18 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:01:21 pm [vite] (client) hmr update /src/index.css, /src/components/Footer/Footer.jsx
+2:01:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:21 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+      at async viteTransformMiddleware (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:24604:20)
+2:01:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:21 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:24 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+2:01:24 pm [vite] Internal server error: Failed to resolve import "../components/AnimatedBackground/BackgroundAnimation" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:6:32
+  3  |  // Effects overlays
+  4  |  import PageLoader from "../components/landing/PageLoader";
+  5  |  import BackgroundAnimation from "../components/AnimatedBackground/BackgroundAnimation";
+     |                                   ^
+  6  |  import MouseGlow from "../components/landing/MouseGlow";
+  7  |  // Reveal & Marquee helpers
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:01:25 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css
+2:01:25 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:01:25 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:01:25 pm [vite] (client) Pre-transform error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+2:01:25 pm [vite] Internal server error: Failed to resolve import "../components/landing/CustomerStories" from "src/pages/Landing.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/src/pages/Landing.jsx:20:28
+  15 |  import CaseStudies from "../components/landing/CaseStudies";
+  16 |  import IndustryTabs from "../components/landing/IndustryTabs";
+  17 |  import CustomerStories from "../components/landing/CustomerStories";
+     |                               ^
+  18 |  import CTA from "../components/landing/CTA";
+  19 |  import Footer from "../components/Footer/Footer";
+      at TransformPluginContext._formatLog (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30416:39)
+      at TransformPluginContext.error (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30413:14)
+      at normalizeUrl (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27438:18)
+      at async file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27506:30
+      at async Promise.all (index 13)
+      at async TransformPluginContext.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:27474:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:30201:14)
+      at async loadAndTransform (file:///C:/Users/ravil/.gemini/antigravity-ide/scratch/github-clone-react/node_modules/vite/dist/node/chunks/node.js:20124:26)
+2:02:15 pm [vite] (client) page reload src/components/landing/CustomerStories.jsx
+2:03:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:50 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:50 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:52 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:03:52 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:04:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:04:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:04:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:04:08 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:30:04 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:30:04 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:05 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:05 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:20 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:20 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:23 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:23 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:26 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:26 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:27 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:27 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:28 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:32:28 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:03 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:03 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:03 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:03 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:05 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:05 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:06 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:06 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+2:33:48 pm [vite] (client) [console.warn] Express backend offline, running in front-end mock state.

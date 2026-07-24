@@ -1,0 +1,39 @@
+
+> github-clone-react@0.0.0 dev
+> vite
+
+
+  VITE v8.1.5  ready in 168 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+3:24:08 pm [vite] (client) page reload temp-zip-build/dist/index.html
+3:24:33 pm [vite] (client) page reload temp-zip-build/index.html
+3:24:41 pm [vite] (client) page reload temp-zip-build/dist/index.html
+3:24:43 pm [vite] (client) page reload temp-zip-build/index.html
+3:25:39 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:39 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:50 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:50 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:50 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:50 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:25:51 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:36 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:37 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:38 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:47 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:27:47 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:28:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:28:09 pm [vite] (client) [console.warn] You're attempting to animate multiple children within AnimatePresence, but its mode is set to "wait". This will lead to odd visual behaviour.
+3:28:54 pm [vite] (client) page reload temp-zip-build/dist/index.html
+3:29:16 pm [vite] (client) page reload temp-zip-build/index.html
+3:29:22 pm [vite] (client) page reload temp-zip-build/dist/index.html
+3:29:23 pm [vite] (client) page reload temp-zip-build/index.html
