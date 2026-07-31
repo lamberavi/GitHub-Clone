@@ -24,6 +24,7 @@ const repoSlice = createSlice({
     },
     setRepositories: (state, action) => {
       state.repositories = action.payload.map(repo => ({
+        _id: repo._id || repo.repoId,
         id: repo.repoId,
         repoId: repo.repoId,
         name: repo.repoName,
@@ -43,7 +44,9 @@ const repoSlice = createSlice({
         commits: repo.commits || [{ id: 'init001', author: 'ravil', message: 'Initial commit', date: new Date().toISOString(), changes: '+1 -0' }],
         issues: repo.issues || [],
         pullRequests: repo.pullRequests || [],
-        isPinned: repo.isPinned || false
+        isPinned: repo.isPinned || false,
+        isStarred: repo.isStarred || false,
+        isWatched: repo.isWatched || false
       }));
       state.hasLoaded = true;
       state.loading = false;
@@ -95,16 +98,19 @@ const repoSlice = createSlice({
         commits: [{ id: 'init001', author: 'ravil', message: 'Initial commit', date: new Date().toISOString(), changes: '+1 -0' }],
         issues: [],
         pullRequests: [],
-        isPinned: dbRepo.isPinned || false
+        isPinned: dbRepo.isPinned || false,
+        isStarred: dbRepo.isStarred || false,
+        isWatched: dbRepo.isWatched || false
       };
       state.repositories.unshift(newRepo);
     },
     updateRepository: (state, action) => {
       const dbRepo = action.payload;
-      const index = state.repositories.findIndex(r => r.repoId === dbRepo.repoId || r.id === dbRepo.repoId);
+      const index = state.repositories.findIndex(r => (dbRepo._id && r._id === dbRepo._id) || r.repoId === dbRepo.repoId || r.id === dbRepo.repoId);
       if (index !== -1) {
         state.repositories[index] = {
           ...state.repositories[index],
+          _id: dbRepo._id || state.repositories[index]._id,
           id: dbRepo.repoId,
           repoId: dbRepo.repoId,
           name: dbRepo.repoName,
@@ -112,9 +118,14 @@ const repoSlice = createSlice({
           isPrivate: dbRepo.visibility === 'private',
           visibility: dbRepo.visibility,
           language: dbRepo.language,
-          stars: dbRepo.stars,
-          forks: dbRepo.forks,
-          isPinned: dbRepo.isPinned
+          stars: dbRepo.stars !== undefined ? dbRepo.stars : state.repositories[index].stars,
+          forks: dbRepo.forks !== undefined ? dbRepo.forks : state.repositories[index].forks,
+          isPinned: dbRepo.isPinned !== undefined ? dbRepo.isPinned : state.repositories[index].isPinned,
+          isStarred: dbRepo.isStarred !== undefined ? dbRepo.isStarred : state.repositories[index].isStarred,
+          isWatched: dbRepo.isWatched !== undefined ? dbRepo.isWatched : state.repositories[index].isWatched,
+          topics: dbRepo.topics || [],
+          license: dbRepo.license,
+          defaultBranch: dbRepo.defaultBranch || 'main'
         };
       }
     },
@@ -157,8 +168,7 @@ const repoSlice = createSlice({
             updateNestedFile(nextDir, pathParts.slice(1), fileContent);
           }
         };
-        const pathParts = [...state.currentPath, state.selectedFile.name];
-        updateNestedFile(repo.files, pathParts, content);
+        updateNestedFile(repo.files, filepath.split('/'), content);
       }
     },
     addIssue: (state, action) => {
@@ -170,11 +180,9 @@ const repoSlice = createSlice({
           title: action.payload.title,
           status: 'open',
           author: 'ravil',
-          comments: 0,
-          labels: action.payload.labels || [],
-          priority: action.payload.priority || 'Medium',
+          number: nextId,
           date: new Date().toISOString(),
-          commentsList: []
+          comments: 0
         });
       }
     },
@@ -191,7 +199,7 @@ const repoSlice = createSlice({
       if (repo) {
         const issue = repo.issues.find(i => i.id === issueId);
         if (issue) {
-          issue.comments += 1;
+          issue.comments = (issue.comments || 0) + 1;
           if (!issue.commentsList) issue.commentsList = [];
           issue.commentsList.push({
             author: 'ravil',
@@ -239,6 +247,21 @@ const repoSlice = createSlice({
     setSearch: (state, action) => {
       state.searchQuery = action.payload.query;
       state.searchFilter = action.payload.filter || 'all';
+    },
+    toggleStarRepository: (state, action) => {
+      const repoId = action.payload;
+      const repo = state.repositories.find(r => r.id === repoId || r.repoId === repoId);
+      if (repo) {
+        repo.isStarred = !repo.isStarred;
+        repo.stars = repo.isStarred ? (repo.stars || 0) + 1 : Math.max(0, (repo.stars || 0) - 1);
+      }
+    },
+    toggleWatchRepository: (state, action) => {
+      const repoId = action.payload;
+      const repo = state.repositories.find(r => r.id === repoId || r.repoId === repoId);
+      if (repo) {
+        repo.isWatched = !repo.isWatched;
+      }
     }
   }
 });
@@ -264,7 +287,9 @@ export const {
   addIssueComment,
   addPullRequest,
   mergePullRequest,
-  setSearch
+  setSearch,
+  toggleStarRepository,
+  toggleWatchRepository
 } = repoSlice.actions;
 
 export default repoSlice.reducer;

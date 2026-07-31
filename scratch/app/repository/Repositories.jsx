@@ -1,57 +1,107 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { BookOpen, RefreshCw } from 'lucide-react';
+import { BookOpen, RefreshCw, FolderPlus } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
-import { setRepositories, setLoading, setError } from '../../lib/redux/slices/repoSlice';
-import RepositorySection from '../profile/RepositorySection';
-import api from '../../lib/api/axios';
+import RepositoryHeader from '../../components/RepositoryHeader';
+import RepositoryCard from '../../components/RepositoryCard';
+import RepositoryModal from '../../components/RepositoryModal';
+import RepositorySkeleton from '../../components/RepositorySkeleton';
+import RepositoryEmpty from '../../components/RepositoryEmpty';
+import useRepositories from '../../hooks/useRepositories';
 
 export default function Repositories() {
-  const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
-  const { repositories, hasLoaded, loading, error } = useSelector((state) => state.repos);
+  const { 
+    repositories, 
+    loading, 
+    error, 
+    fetchRepositories 
+  } = useRepositories();
 
-  const fetchRepos = async (force = false) => {
-    if (!user) return;
-    if (hasLoaded && !force) return;
+  // Search & Filter state
+  const [searchQuery, setSearchQuery] = useState('');
+  const [visFilter, setVisFilter] = useState('all');
+  const [langFilter, setLangFilter] = useState('All');
+  const [sortOption, setSortOption] = useState('updated');
+  
+  // Modals state
+  const [isCreateOpen, setIsCreateOpen] = useState(false);
 
-    dispatch(setLoading(true));
+  const usernameStr = user?.username || 'ravil';
+
+  const loadData = useCallback(async (force = false) => {
+    if (!usernameStr) return;
     try {
-      const usernameStr = user.username || 'ravil';
-      const res = await api.get(`/api/profile/${usernameStr}/repos`);
-      dispatch(setRepositories(res.data.repositories));
+      await fetchRepositories(usernameStr, force);
     } catch (err) {
-      dispatch(setError(err.response?.data?.message || err.message || 'Database lookup timeout.'));
+      console.error('Failed to load repositories:', err);
     }
-  };
+  }, [usernameStr, fetchRepositories]);
 
   useEffect(() => {
-    fetchRepos(false);
-  }, [user, dispatch]);
+    loadData(false);
+  }, [loadData]);
 
   const handleForceRefresh = () => {
-    fetchRepos(true);
+    loadData(true);
   };
 
-  const renderSkeletons = () => (
-    <div className="space-y-4">
-      {[1, 2, 3].map((n) => (
-        <div key={n} className="p-5 border border-[var(--border-primary)] bg-[var(--surface-card)] rounded-xl space-y-3.5 animate-pulse">
-          <div className="flex items-center gap-3">
-            <div className="h-4.5 w-36 bg-[var(--border-primary)] rounded" />
-            <div className="h-4 w-12 bg-[var(--border-primary)] rounded-full" />
-          </div>
-          <div className="h-3 w-2/3 bg-[var(--border-primary)] rounded" />
-          <div className="flex gap-4 pt-1">
-            <div className="h-3 w-16 bg-[var(--border-primary)] rounded" />
-            <div className="h-3 w-12 bg-[var(--border-primary)] rounded" />
-            <div className="h-3 w-20 bg-[var(--border-primary)] rounded" />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+  // Filtered and sorted repositories computed locally
+  const processedRepos = useMemo(() => {
+    if (!repositories) return [];
+
+    let result = [...repositories];
+
+    // 1. Filter by Search Query
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      result = result.filter(
+        (r) => 
+          (r.name || r.repoName || '').toLowerCase().includes(q) ||
+          (r.description || '').toLowerCase().includes(q)
+      );
+    }
+
+    // 2. Filter by Visibility / Type
+    if (visFilter !== 'all') {
+      if (visFilter === 'public') {
+        result = result.filter((r) => r.visibility === 'public' || !r.isPrivate);
+      } else if (visFilter === 'private') {
+        result = result.filter((r) => r.visibility === 'private' || r.isPrivate);
+      } else if (visFilter === 'pinned') {
+        result = result.filter((r) => r.isPinned);
+      } else if (visFilter === 'archived') {
+        result = result.filter((r) => r.isArchived);
+      }
+    }
+
+    // 3. Filter by Language
+    if (langFilter !== 'All') {
+      result = result.filter((r) => r.language === langFilter);
+    }
+
+    // 4. Sort
+    result.sort((a, b) => {
+      if (sortOption === 'newest') {
+        return new Date(b.createdAt || 0) - new Date(a.createdAt || 0);
+      }
+      if (sortOption === 'oldest') {
+        return new Date(a.createdAt || 0) - new Date(b.createdAt || 0);
+      }
+      if (sortOption === 'alphabetical') {
+        return (a.name || a.repoName || '').localeCompare(b.name || b.repoName || '');
+      }
+      if (sortOption === 'stars') {
+        return (b.stars || 0) - (a.stars || 0);
+      }
+      // Default: 'updated'
+      return new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0);
+    });
+
+    return result;
+  }, [repositories, searchQuery, visFilter, langFilter, sortOption]);
 
   if (error) {
     return (
@@ -69,7 +119,7 @@ export default function Repositories() {
 
   return (
     <div className="space-y-6 select-none text-[var(--text-primary)] max-w-7xl mx-auto p-4 sm:p-6">
-      {/* Header details */}
+      {/* Title Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-[var(--border-primary)] pb-5">
         <div>
           <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-2 text-[var(--text-primary)]">
@@ -85,14 +135,57 @@ export default function Repositories() {
             Browse and query all active projects, codebases, and configurations from the database.
           </p>
         </div>
+        <Button
+          onClick={() => setIsCreateOpen(true)}
+          variant="primary"
+          icon={FolderPlus}
+          className="font-bold py-2 px-4 rounded-xl shrink-0 cursor-pointer shadow-lg hover:shadow-[var(--accent-primary)]/20 transition-all duration-300"
+        >
+          New Repository
+        </Button>
       </div>
 
+      {/* Search and Filters panel wrapper */}
+      <RepositoryHeader
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        visFilter={visFilter}
+        onVisChange={setVisFilter}
+        langFilter={langFilter}
+        onLangChange={setLangFilter}
+        sortOption={sortOption}
+        onSortChange={setSortOption}
+      />
+
+      {/* Main Content Body */}
       {loading ? (
-        renderSkeletons()
+        <RepositorySkeleton />
+      ) : processedRepos.length === 0 ? (
+        <RepositoryEmpty onCreateClick={() => setIsCreateOpen(true)} />
       ) : (
-        <RepositorySection 
-          repositories={repositories} 
-          onRefresh={handleForceRefresh} 
+        <motion.div 
+          layout
+          className="grid grid-cols-1 gap-4"
+        >
+          <AnimatePresence mode="popLayout">
+            {processedRepos.map((repo) => (
+              <RepositoryCard
+                key={repo.id || repo.repoId || repo._id}
+                repo={repo}
+                searchQuery={searchQuery}
+                onActionSuccess={handleForceRefresh}
+              />
+            ))}
+          </AnimatePresence>
+        </motion.div>
+      )}
+
+      {/* Create Modal overlay */}
+      {isCreateOpen && (
+        <RepositoryModal
+          isOpen={isCreateOpen}
+          onClose={() => setIsCreateOpen(false)}
+          onSuccess={handleForceRefresh}
         />
       )}
     </div>

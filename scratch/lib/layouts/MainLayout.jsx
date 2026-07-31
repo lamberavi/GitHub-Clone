@@ -12,6 +12,7 @@ import { setSearch } from '../redux/slices/repoSlice';
 import useAuth from '../../hooks/useAuth';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import ProfileDropdown from '../../components/navigation/ProfileDropdown';
+import { resolveAvatarUrl } from '../utils/avatar';
 
 export default function MainLayout() {
   const navigate = useNavigate();
@@ -52,7 +53,7 @@ export default function MainLayout() {
     navigate('/login');
   };
 
-  const photo = user?.photo || user?.avatarUrl || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80';
+  const photo = resolveAvatarUrl(user?.photo || user?.avatarUrl || user?.avatar);
 
   return (
     <div className="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300 select-none">

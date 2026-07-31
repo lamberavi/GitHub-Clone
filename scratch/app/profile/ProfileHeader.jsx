@@ -2,15 +2,13 @@ import React from 'react';
 import { BookOpen, FolderGit2, LayoutGrid, Package, Star, Activity, BarChart2 } from 'lucide-react';
 import Badge from '../../components/common/Badge';
 
-export default function ProfileHeader({ activeTab, setActiveTab, repoCount = 0 }) {
+export default function ProfileHeader({ activeTab, setActiveTab, repoCount = 0, projectCount = 0, starCount = 0 }) {
   const tabs = [
     { id: 'overview', label: 'Overview', icon: BookOpen },
     { id: 'repositories', label: 'Repositories', icon: FolderGit2, count: repoCount },
-    { id: 'projects', label: 'Projects', icon: LayoutGrid, count: 0 },
+    { id: 'projects', label: 'Projects', icon: LayoutGrid, count: projectCount },
     { id: 'packages', label: 'Packages', icon: Package, count: 0 },
-    { id: 'stars', label: 'Stars', icon: Star, count: 12 },
-    { id: 'stats', label: 'Stats', icon: BarChart2 },
-    { id: 'activity', label: 'Activity', icon: Activity }
+    { id: 'stars', label: 'Stars', icon: Star, count: starCount }
   ];
 
   return (

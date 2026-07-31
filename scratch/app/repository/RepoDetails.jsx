@@ -15,6 +15,8 @@ import FileExplorer from '../../components/repository/FileExplorer';
 import MonacoEditor from '../../components/editor/MonacoEditor';
 import IssueList from '../../components/issue/IssueList';
 import PRList from '../../components/pullrequest/PRList';
+import RepositorySettingsForm from '../../components/RepositorySettingsForm';
+import DangerZone from '../../components/DangerZone';
 
 // Redux Actions
 import { 
@@ -291,36 +293,25 @@ export default function RepoDetails() {
         {/* REPOSITORY SETTINGS TAB */}
         {activeTab === 'settings' && (
           <div className="p-6 rounded-xl border border-[var(--border-primary)] bg-[var(--surface-card)] shadow-sm space-y-6 max-w-xl text-[var(--text-primary)]">
-            <h3 className="font-bold text-base">Repository Settings</h3>
+            <h3 className="font-bold text-base mb-4">Repository Settings</h3>
             
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
-              <Input
-                label="Rename Repository"
-                name="renameRepo"
-                placeholder={repo.name}
-                disabled
-              />
-              <p className="text-2xs text-[var(--text-muted)]">
-                Renaming features are locked in demo modes to preserve references.
-              </p>
-            </form>
+            <RepositorySettingsForm
+              repo={repo}
+              onUpdateSuccess={(updatedRepo) => {
+                const newRepoId = updatedRepo.repoId || updatedRepo.id;
+                if (newRepoId && newRepoId !== repoId) {
+                  navigate(`/repo/${newRepoId}`, { replace: true });
+                }
+              }}
+              inline={true}
+            />
 
-            <div className="border-t border-[var(--border-primary)] pt-6 space-y-4">
-              <h4 className="text-sm font-bold text-[#F85149]">Danger Zone</h4>
-              <div className="p-4 border border-[#F85149]/30 rounded-xl bg-[#F85149]/10 space-y-3">
-                <div className="flex justify-between items-center gap-4">
-                  <div>
-                    <h5 className="text-xs font-bold text-[var(--text-primary)]">Delete this repository</h5>
-                    <p className="text-[10px] text-[var(--text-muted)] mt-0.5">
-                      Once deleted, in-memory states will disappear.
-                    </p>
-                  </div>
-                  <Button variant="danger" size="sm" isDisabled>
-                    Delete
-                  </Button>
-                </div>
-              </div>
-            </div>
+            <DangerZone
+              repo={repo}
+              onDeleteSuccess={() => {
+                navigate('/repositories');
+              }}
+            />
           </div>
         )}
 

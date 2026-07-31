@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { Search, Star, Pin, Plus, Check, Edit2, Trash2, ArrowLeft, ArrowRight } from 'lucide-react';
 import Button from '../../components/common/Button';
 import Input from '../../components/common/Input';
-import api from '../../lib/api/axios';
+import DeleteRepositoryModal from '../../components/repository/DeleteRepositoryModal';
+import EditRepositoryModal from '../../components/repository/EditRepositoryModal';
+import { updateRepository, deleteRepository } from '../../redux/slices/repoSlice';
+import api from '../../api/axios';
 import toast from 'react-hot-toast';
-import EditRepositoryModal from '../../components/EditRepositoryModal';
-import RepositoryCard from '../../components/RepositoryCard';
 
 export default function RepositorySection({ repositories = [], onRefresh }) {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   
   const [searchQuery, setSearchQuery] = useState('');
   const [visFilter, setVisFilter] = useState('all'); // all, public, private
@@ -20,7 +23,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
-  // Create repo state
+  // Create repo modal state
   const [isCreating, setIsCreating] = useState(false);
   const [newRepo, setNewRepo] = useState({
     repoName: '',
@@ -32,8 +35,9 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
     license: 'None'
   });
 
-  // Edit repo state
+  // Edit / Delete modals
   const [editingRepo, setEditingRepo] = useState(null);
+  const [deletingRepo, setDeletingRepo] = useState(null);
   const [isSaving, setIsSaving] = useState(false);
 
   const handleCreateRepo = async (e) => {
@@ -43,6 +47,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
       return;
     }
 
+    // Name validation
     const nameRegex = /^[a-zA-Z0-9._-]+$/;
     if (!nameRegex.test(newRepo.repoName)) {
       toast.error('Repository name can only contain letters, numbers, hyphens, periods, and underscores.');
@@ -63,7 +68,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
         hasGitignore: false,
         license: 'None'
       });
-      onRefresh();
+      if (onRefresh) onRefresh();
     } catch (err) {
       toast.error(err.response?.data?.message || err.message);
     } finally {
@@ -71,38 +76,49 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
     }
   };
 
-  // Edit and delete actions are now handled by the imported settings modal components
-
   const handleToggleStar = async (repoId, e) => {
     e.stopPropagation();
     try {
-      await api.post('/api/profile/repos/star', { repoId });
+      const res = await api.patch(`/api/repositories/${repoId}/star`);
       toast.success('Starred repository!');
-      onRefresh();
+      dispatch(updateRepository({ id: repoId, stars: res.data.stars }));
+      if (onRefresh) onRefresh();
     } catch (err) {
-      toast.error(err.message);
+      toast.error(err.message || 'Failed to star repository.');
     }
   };
 
   const handleTogglePin = async (repoId, e) => {
     e.stopPropagation();
     try {
-      await api.post('/api/profile/repos/pin', { repoId });
-      toast.success('Toggled pin status!');
-      onRefresh();
+      const res = await api.patch(`/api/repositories/${repoId}/pin`);
+      toast.success(res.data.isPinned ? 'Repository pinned to Overview' : 'Repository unpinned');
+      dispatch(updateRepository({ id: repoId, isPinned: res.data.isPinned }));
+      if (onRefresh) onRefresh();
     } catch (err) {
-      toast.error(err.message);
+      toast.error(err.message || 'Failed to toggle pin status.');
     }
   };
 
+  const handleUpdateSuccess = (updatedData) => {
+    dispatch(updateRepository(updatedData));
+    if (onRefresh) onRefresh();
+  };
+
+  const handleDeleteSuccess = (repoId) => {
+    dispatch(deleteRepository(repoId));
+    if (onRefresh) onRefresh();
+  };
+
+  // Helper: Highlight matching query text
   const highlightText = (text, query) => {
-    if (!query) return text;
+    if (!query || !text) return text || '';
     const parts = text.split(new RegExp(`(${query})`, 'gi'));
     return (
       <span>
         {parts.map((part, i) => 
           part.toLowerCase() === query.toLowerCase() 
-            ? <mark key={i} className="bg-amber-400/30 text-[var(--text-primary)] rounded px-0.5 font-bold">{part}</mark> 
+            ? <mark key={i} className="bg-amber-500/25 text-amber-200 rounded px-0.5 font-bold">{part}</mark> 
             : part
         )}
       </span>
@@ -124,6 +140,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
       return 0;
     });
 
+  // Paginated Repos
   const totalPages = Math.ceil(filteredRepos.length / itemsPerPage) || 1;
   const paginatedRepos = filteredRepos.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   const languages = ['all', ...new Set(repositories.map((r) => r.language).filter(Boolean))];
@@ -131,9 +148,9 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
   return (
     <div className="space-y-4 select-none">
       {/* Search and Filters */}
-      <div className="flex flex-col md:flex-row gap-3 items-center justify-between border-b border-[var(--border-primary)] pb-4">
+      <div className="flex flex-col md:flex-row gap-3 items-center justify-between border-b border-[#30363d] pb-4">
         <div className="relative w-full md:w-80">
-          <Search size={14} className="absolute left-3 top-3 text-[var(--text-muted)]" />
+          <Search size={14} className="absolute left-3 top-3 text-[#8b949e]" />
           <input
             type="text"
             placeholder="Search repositories..."
@@ -142,7 +159,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
               setSearchQuery(e.target.value);
               setCurrentPage(1);
             }}
-            className="w-full pl-9 pr-3 py-2 bg-[var(--surface-card)] border border-[var(--border-primary)] focus:border-[var(--accent-primary)] rounded-lg text-xs font-semibold text-[var(--text-primary)] outline-none"
+            className="w-full pl-9 pr-3 py-2 bg-[#0d1117] border border-[#30363d] focus:border-[#58a6ff] rounded-lg text-xs font-semibold text-white outline-none"
           />
         </div>
 
@@ -153,7 +170,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
               setVisFilter(e.target.value);
               setCurrentPage(1);
             }}
-            className="bg-[var(--surface-card)] border border-[var(--border-primary)] text-2xs font-bold text-[var(--text-muted)] py-1.5 px-3 rounded-lg outline-none cursor-pointer"
+            className="bg-[#161b22] border border-[#30363d] text-2xs font-black text-[#8b949e] py-1.5 px-3 rounded-lg outline-none cursor-pointer"
           >
             <option value="all">Type: All</option>
             <option value="public">Public</option>
@@ -166,7 +183,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
               setLangFilter(e.target.value);
               setCurrentPage(1);
             }}
-            className="bg-[var(--surface-card)] border border-[var(--border-primary)] text-2xs font-bold text-[var(--text-muted)] py-1.5 px-3 rounded-lg outline-none cursor-pointer"
+            className="bg-[#161b22] border border-[#30363d] text-2xs font-black text-[#8b949e] py-1.5 px-3 rounded-lg outline-none cursor-pointer"
           >
             {languages.map((l) => (
               <option key={l} value={l}>
@@ -181,7 +198,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
               setSortOrder(e.target.value);
               setCurrentPage(1);
             }}
-            className="bg-[var(--surface-card)] border border-[var(--border-primary)] text-2xs font-bold text-[var(--text-muted)] py-1.5 px-3 rounded-lg outline-none cursor-pointer"
+            className="bg-[#161b22] border border-[#30363d] text-2xs font-black text-[#8b949e] py-1.5 px-3 rounded-lg outline-none cursor-pointer"
           >
             <option value="newest">Sort: Newest</option>
             <option value="oldest">Sort: Oldest</option>
@@ -203,10 +220,10 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
       {/* Repositories List */}
       <div className="space-y-3">
         {paginatedRepos.length === 0 ? (
-          <div className="text-center py-12 border border-[var(--border-primary)] bg-[var(--surface-card)] rounded-xl space-y-2">
+          <div className="text-center py-12 border border-[#30363d]/50 bg-[#161b22]/10 rounded-xl space-y-2">
             <span className="text-4xl block">📁</span>
-            <p className="text-sm font-bold text-[var(--text-primary)]">No repositories found</p>
-            <p className="text-xs text-[var(--text-muted)]">Create your first repository to start collaborating.</p>
+            <p className="text-sm font-black text-white">No repositories found</p>
+            <p className="text-xs text-[#8b949e]/80">Create your first repository to start collaborating.</p>
             <div className="pt-2">
               <Button size="xs" variant="primary" icon={Plus} onClick={() => setIsCreating(true)}>
                 New Repository
@@ -214,35 +231,108 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
             </div>
           </div>
         ) : (
-          paginatedRepos.map((repo) => (
-            <RepositoryCard
-              key={repo.repoId || repo.id || repo._id}
-              repo={repo}
-              searchQuery={searchQuery}
-              onActionSuccess={onRefresh}
-            />
-          ))
+          paginatedRepos.map((repo) => {
+            const rId = repo.repoId || repo.id || repo._id;
+            return (
+              <div
+                key={rId}
+                onClick={() => navigate(`/repo/${rId}`)}
+                className="glass-panel p-4 rounded-xl border border-[#30363d]/60 hover:border-[#58a6ff]/40 hover:shadow-glow cursor-pointer transition-all flex flex-col sm:flex-row justify-between sm:items-center gap-4 group"
+              >
+                <div className="space-y-1.5 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <h4 className="text-sm font-bold text-[#58a6ff] hover:underline truncate">
+                      {highlightText(repo.repoName || repo.name, searchQuery)}
+                    </h4>
+                    <span className="px-2 py-0.5 text-3xs font-black uppercase rounded-full border border-[#30363d] text-[#8b949e] bg-[#11161d]">
+                      {repo.visibility || (repo.isPrivate ? 'private' : 'public')}
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#8b949e] line-clamp-2 max-w-lg leading-relaxed font-semibold">
+                    {repo.description || 'No description provided.'}
+                  </p>
+                  
+                  <div className="flex items-center gap-4 text-[10px] text-[#8b949e] font-bold">
+                    <span className="flex items-center gap-1">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#f1e05a]" />
+                      {repo.language || 'JavaScript'}
+                    </span>
+                    <span className="flex items-center gap-0.5">
+                      <Star size={11} /> {repo.stars || 0}
+                    </span>
+                    <span>
+                      Updated {repo.updatedAt ? new Date(repo.updatedAt).toLocaleDateString() : 'recently'}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Actions panel */}
+                <div className="flex gap-2 self-end sm:self-center shrink-0">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setEditingRepo({ ...repo });
+                    }}
+                    className="p-2 rounded-lg border border-[#30363d] text-[#8b949e] hover:text-white hover:bg-neutral-800 transition-colors cursor-pointer"
+                    title="Edit repository settings"
+                  >
+                    <Edit2 size={13} />
+                  </button>
+                  
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setDeletingRepo({ ...repo });
+                    }}
+                    className="p-2 rounded-lg border border-red-500/30 text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer"
+                    title="Delete repository"
+                  >
+                    <Trash2 size={13} />
+                  </button>
+
+                  <button
+                    onClick={(e) => handleTogglePin(rId, e)}
+                    className={`p-2 rounded-lg border border-[#30363d] hover:bg-neutral-800 transition-colors cursor-pointer ${
+                      repo.isPinned ? 'text-amber-500 bg-[#30363d]/50' : 'text-[#8b949e]'
+                    }`}
+                    title={repo.isPinned ? 'Unpin from Overview' : 'Pin to Overview'}
+                  >
+                    <Pin size={13} />
+                  </button>
+
+                  <button
+                    onClick={(e) => handleToggleStar(rId, e)}
+                    className="p-2 rounded-lg border border-[#30363d] hover:bg-neutral-800 text-[#8b949e] hover:text-white transition-colors flex items-center gap-1 text-[10px] font-bold cursor-pointer"
+                    title="Star repository"
+                  >
+                    <Star size={13} />
+                    <span>Star</span>
+                  </button>
+                </div>
+              </div>
+            );
+          })
         )}
       </div>
 
       {/* Pagination Controls */}
       {totalPages > 1 && (
-        <div className="flex items-center justify-between border-t border-[var(--border-primary)] pt-4">
-          <span className="text-2xs text-[var(--text-muted)] font-bold">
+        <div className="flex items-center justify-between border-t border-[#30363d] pt-4">
+          <span className="text-2xs text-[#8b949e] font-bold">
             Page {currentPage} of {totalPages}
           </span>
           <div className="flex gap-2">
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
-              className="p-1.5 border border-[var(--border-primary)] text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-lg disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer flex items-center justify-center"
+              className="p-1.5 border border-[#30363d] text-[#8b949e] hover:text-white rounded-lg disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer flex items-center justify-center"
             >
               <ArrowLeft size={14} />
             </button>
             <button
               onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
-              className="p-1.5 border border-[var(--border-primary)] text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-lg disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer flex items-center justify-center"
+              className="p-1.5 border border-[#30363d] text-[#8b949e] hover:text-white rounded-lg disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer flex items-center justify-center"
             >
               <ArrowRight size={14} />
             </button>
@@ -250,15 +340,15 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
         </div>
       )}
 
-      {/* Creation Modal Form */}
+      {/* New Repository Modal Form */}
       {isCreating && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="w-full max-w-md bg-[var(--surface-card)] border border-[var(--border-primary)] rounded-xl shadow-lg overflow-hidden text-[var(--text-primary)]">
-            <div className="flex justify-between items-center p-4 border-b border-[var(--border-primary)]">
-              <h3 className="font-black text-base text-[var(--text-primary)]">Create a new repository</h3>
+          <div className="w-full max-w-md bg-[#161b22] border border-[#30363d] rounded-xl shadow-premium overflow-hidden">
+            <div className="flex justify-between items-center p-4 border-b border-[#30363d]">
+              <h3 className="font-black text-white text-base">Create a new repository</h3>
               <button
                 onClick={() => setIsCreating(false)}
-                className="text-[var(--text-muted)] hover:text-[var(--text-primary)] text-sm font-bold cursor-pointer"
+                className="text-[#8b949e] hover:text-white text-sm font-bold cursor-pointer"
               >
                 ✕
               </button>
@@ -284,14 +374,14 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-2xs font-black text-[var(--text-muted)] mb-1.5 uppercase tracking-wide">
+                  <label className="block text-2xs font-black text-[#8b949e] mb-1.5 uppercase tracking-wide">
                     Visibility
                   </label>
                   <select
                     value={newRepo.visibility}
                     onChange={(e) => setNewRepo({ ...newRepo, visibility: e.target.value })}
                     disabled={isSaving}
-                    className="w-full p-2 bg-[var(--surface-canvas)] border border-[var(--border-primary)] text-xs font-bold text-[var(--text-primary)] rounded-lg outline-none cursor-pointer"
+                    className="w-full p-2 bg-[#0d1117] border border-[#30363d] text-xs font-bold text-white rounded-lg outline-none cursor-pointer"
                   >
                     <option value="public">Public</option>
                     <option value="private">Private</option>
@@ -299,14 +389,14 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
                 </div>
 
                 <div>
-                  <label className="block text-2xs font-black text-[var(--text-muted)] mb-1.5 uppercase tracking-wide">
+                  <label className="block text-2xs font-black text-[#8b949e] mb-1.5 uppercase tracking-wide">
                     Language
                   </label>
                   <select
                     value={newRepo.language}
                     onChange={(e) => setNewRepo({ ...newRepo, language: e.target.value })}
                     disabled={isSaving}
-                    className="w-full p-2 bg-[var(--surface-canvas)] border border-[var(--border-primary)] text-xs font-bold text-[var(--text-primary)] rounded-lg outline-none cursor-pointer"
+                    className="w-full p-2 bg-[#0d1117] border border-[#30363d] text-xs font-bold text-white rounded-lg outline-none cursor-pointer"
                   >
                     <option value="JavaScript">JavaScript</option>
                     <option value="Python">Python</option>
@@ -317,32 +407,7 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
                 </div>
               </div>
 
-              {/* Initializers checkboxes */}
-              <div className="space-y-2 pt-2 border-t border-[var(--border-primary)] mt-2">
-                <label className="flex items-center gap-2 text-2xs font-bold text-[var(--text-muted)] cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={newRepo.hasReadme}
-                    onChange={(e) => setNewRepo({ ...newRepo, hasReadme: e.target.checked })}
-                    disabled={isSaving}
-                    className="rounded bg-[var(--surface-canvas)] border-[var(--border-primary)] accent-[var(--accent-primary)]"
-                  />
-                  <span>Initialize this repository with a README</span>
-                </label>
-
-                <label className="flex items-center gap-2 text-2xs font-bold text-[var(--text-muted)] cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={newRepo.hasGitignore}
-                    onChange={(e) => setNewRepo({ ...newRepo, hasGitignore: e.target.checked })}
-                    disabled={isSaving}
-                    className="rounded bg-[var(--surface-canvas)] border-[var(--border-primary)] accent-[var(--accent-primary)]"
-                  />
-                  <span>Add .gitignore template</span>
-                </label>
-              </div>
-
-              <div className="flex gap-2 justify-end pt-2">
+              <div className="flex gap-2 justify-end pt-2 border-t border-[#30363d]">
                 <Button
                   variant="secondary"
                   size="sm"
@@ -368,19 +433,23 @@ export default function RepositorySection({ repositories = [], onRefresh }) {
         </div>
       )}
 
+      {/* Edit Repository Modal */}
       {editingRepo && (
         <EditRepositoryModal
           repo={editingRepo}
           isOpen={!!editingRepo}
           onClose={() => setEditingRepo(null)}
-          onUpdateSuccess={() => {
-            setEditingRepo(null);
-            onRefresh();
-          }}
-          onDeleteSuccess={() => {
-            setEditingRepo(null);
-            onRefresh();
-          }}
+          onUpdateSuccess={handleUpdateSuccess}
+        />
+      )}
+
+      {/* Typed Confirmation Delete Repository Modal */}
+      {deletingRepo && (
+        <DeleteRepositoryModal
+          repo={deletingRepo}
+          isOpen={!!deletingRepo}
+          onClose={() => setDeletingRepo(null)}
+          onDeleteSuccess={handleDeleteSuccess}
         />
       )}
     </div>

@@ -11,7 +11,8 @@ export default function Button({
   isSuccess = false,
   isDisabled = false,
   className = '',
-  icon: Icon
+  icon: Icon,
+  loadingText
 }) {
   const baseStyle = 'relative inline-flex items-center justify-center font-bold rounded-xl transition-all duration-300 focus:outline-none disabled:opacity-50 disabled:pointer-events-none select-none cursor-pointer overflow-hidden transform';
   
@@ -56,7 +57,7 @@ export default function Button({
         <Icon size={size === 'sm' ? 14 : size === 'lg' ? 20 : 16} className="shrink-0 transition-transform group-hover:scale-110" />
       )}
 
-      <span className="relative z-10">{isLoading ? 'Processing...' : isSuccess ? 'Success!' : children}</span>
+      <span className="relative z-10">{isLoading ? (loadingText || 'Processing...') : isSuccess ? 'Success!' : children}</span>
     </motion.button>
   );
 }

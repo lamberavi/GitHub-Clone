@@ -6,8 +6,9 @@ import Button from '../../components/common/Button';
 import Input from '../../components/common/Input';
 import api from '../../lib/api/axios';
 import toast from 'react-hot-toast';
+import { resolveAvatarUrl } from '../../lib/utils/avatar';
 
-export default function ProfileSidebar({ user, onUpdateUser }) {
+export default function ProfileSidebar({ user, onUpdateUser, organizations = [] }) {
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isUploadingAvatar, setIsUploadingAvatar] = useState(false);
@@ -63,8 +64,7 @@ export default function ProfileSidebar({ user, onUpdateUser }) {
 
   const displayName = `${user?.firstName || ''} ${user?.lastName || ''}`.trim() || user?.displayName || 'Developer';
   const username = user?.username || 'user';
-  const rawPhoto = user?.photo || user?.avatarUrl || user?.avatar || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&auto=format&fit=crop&q=80';
-  const photo = rawPhoto.startsWith('/uploads') ? `http://localhost:5000${rawPhoto}` : rawPhoto;
+  const photo = resolveAvatarUrl(user?.photo || user?.avatarUrl || user?.avatar);
 
   return (
     <div className="space-y-6 text-[#c9d1d9] select-none">
@@ -189,6 +189,24 @@ export default function ProfileSidebar({ user, onUpdateUser }) {
           </div>
         </div>
       </div>
+
+      {/* Organizations section */}
+      {organizations && organizations.length > 0 && (
+        <div className="border-t border-[#30363d] pt-4 space-y-2">
+          <h3 className="text-xs font-extrabold text-white uppercase tracking-wider">Organizations</h3>
+          <div className="flex flex-wrap gap-2 pt-1">
+            {organizations.map((org) => (
+              <div 
+                key={org.orgId} 
+                className="w-9 h-9 rounded-md bg-[#21262d] border border-[#30363d] flex items-center justify-center font-bold text-xs text-white hover:border-[#58a6ff] cursor-pointer transition-colors"
+                title={org.name}
+              >
+                {org.name.slice(0, 2).toUpperCase()}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Edit Profile Modal */}
       {isEditing && (

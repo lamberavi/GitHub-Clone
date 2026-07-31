@@ -3,12 +3,13 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Smile, LogOut, ArrowRightLeft } from 'lucide-react';
 import profileMenuItems from '../../lib/config/profileMenuItems';
+import { resolveAvatarUrl } from '../../lib/utils/avatar';
 
 export default function ProfileDropdown({ user, onClose, onLogout }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const photo = user?.photo || user?.avatarUrl || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80';
+  const photo = resolveAvatarUrl(user?.photo || user?.avatarUrl || user?.avatar);
   const displayName = `${user?.firstName || ''} ${user?.lastName || ''}`.trim() || user?.displayName || 'Developer';
   const username = user?.username || 'user';
 
